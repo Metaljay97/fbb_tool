@@ -11,3 +11,8 @@ stats = leaguedashplayerstats.LeagueDashPlayerStats(
 
 data = stats.get_data_frames()[0]  # Get the first (and only) DataFrame
 print(data)  # Print the first five rows of the DataFrame
+
+# iterating over rows using iterrows() function
+for i, j in data.iterrows():
+    print(i, j)
+    print()
