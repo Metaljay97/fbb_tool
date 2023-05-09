@@ -12,9 +12,3 @@ class Player:
     def get_game_log_for_year(self, year):
         # Get player game log for given year
         return playergamelog.PlayerGameLog(player_id=self.id, season=year)
-
-
-# Create an instance of the class
-my_instance = Player("James Harden")
-
-print(my_instance.get_game_log_for_year("2022").get_data_frames()[0])
